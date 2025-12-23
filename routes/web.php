@@ -16,4 +16,4 @@ Route::get('dashboard', function () {
 
 Route::get('trading', \App\Http\Controllers\TradingController::class)->middleware(['auth', 'verified'])->name('trading');
 
-require __DIR__.'/settings.php';
+require __DIR__ . '/settings.php';
