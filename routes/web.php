@@ -14,4 +14,6 @@ Route::get('dashboard', function () {
     return Inertia::render('Dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
 
+Route::get('trading', \App\Http\Controllers\TradingController::class)->middleware(['auth', 'verified'])->name('trading');
+
 require __DIR__.'/settings.php';
