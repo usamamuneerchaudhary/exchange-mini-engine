@@ -37,6 +37,12 @@ jobs:
         run: cp .env.example .env.testing
       - name: Generate Testing Application Key
         run: php artisan key:generate --env=testing
+      - name: Create Database Directory
+        run: mkdir -p database
+      - name: Set Database Permissions
+        run: chmod -R 775 database
+      - name: Run Migrations
+        run: php artisan migrate --env=testing --force
       - name: Build Assets
         run: npm run build
       - name: Tests
