@@ -62,6 +62,7 @@ Visit `http://localhost:8000` in your browser.
 ## Running Tests
 
 ```bash
+php artisan key:generate --env=testing
 composer test
 ```
 
