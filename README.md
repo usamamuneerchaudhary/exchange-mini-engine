@@ -43,7 +43,7 @@ A Laravel-based exchange trading engine built with Inertia.js and Vue 3.
    php artisan migrate:fresh --seed
    ```
 
-7. **Start the development server**
+6. **Start the development server**
    ```bash
    composer dev
    ```
@@ -55,6 +55,9 @@ The `composer dev` command will start:
 - Vite dev server
 
 Visit `http://localhost:8000` in your browser.
+
+## Screenshots
+![Screenshot 2025-12-23 at 13.44.32.png](screenshots/Screenshot%202025-12-23%20at%2013.44.32.png)
 
 ## Running Tests
 
